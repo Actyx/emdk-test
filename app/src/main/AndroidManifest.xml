@@ -25,10 +25,13 @@
       android:theme="@style/AppTheme.NoActionBar">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
-
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
+    <!-- remove the following line to make multitasking work again -->
+    <uses-library
+      android:name="com.symbol.emdk"
+      android:required="false" />
   </application>
 
 </manifest>
